@@ -14,6 +14,7 @@
             width: 500px;
             border-collapse: collapse;
             vertical-align: middle;
+            position: relative;
         }
 
         caption {
@@ -36,9 +37,23 @@
             width: 50px;
         }
 
-        thead {
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: gray;
+        }
+
+        thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n-1){
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color:lightgray;
         }
 
     </style>
@@ -91,5 +106,9 @@
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet voluptatibus obcaecati rem voluptatem neque voluptas repellat quos. Quo maiores doloremque sint modi placeat repellendus corrupti veritatis sequi hic ab.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, esse animi accusamus, dignissimos ratione officiis, natus excepturi doloremque libero ullam vitae eum. Molestiae, ducimus fugit aut magni reiciendis consectetur. Veritatis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem odio, autem nulla iste exercitationem perspiciatis qui facere quibusdam perferendis esse dolorum vel quidem non nihil, harum debitis numquam laboriosam!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugiat, esse laborum rem cumque omnis culpa voluptate quo. Animi repellat est placeat quam fuga incidunt quisquam vitae illo minima. Quibusdam!</p>
 </body>
 </html>
