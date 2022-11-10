@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body,html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    position: relative;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+main {
+    max-height: 400px;
+    min-width: 375pxpx;
+    max-width: 534px;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+}
+
+main h1,p {
+    padding: 14px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.178);
+}
+
+main h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8em;
+    text-align: left;
+    font-weight: bolder;
+    padding-top: 3px;
+    font-variant: small-caps;
+}
+
+main p {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.dinheiro {
+    color: green;
+    font-size: 2.5em;
+    padding-bottom: 0px;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+}
+
+.botao {
+    padding: 15px;
+    width: 150px;
+    background-color: rgba(5, 109, 5, 0.904);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-radius:10px;
+}
+
+.botao:hover {
+    transform: translate(-2px,-2px);
+    background-color: rgb(8, 160, 8);
+    transition: transform 0.5s;
+}
+
+.texto {
+    padding-top: 5px;
+    font-size: 0.8em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.perfume {
+    padding-top: 25px;
+    color: gray;
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+}
